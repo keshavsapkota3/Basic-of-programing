@@ -1,0 +1,28 @@
+package houseofjava;
+import java.util.*;
+public class multidarray {
+public static void main(String[] args) {
+	Scanner myObj= new Scanner(System.in);
+	System.out.println("Enter the number of row ?");
+	int row = myObj.nextInt();
+	System.out.println("Enter the number of coloumn?");
+	int col= myObj.nextInt();
+//	creating empty 2 demensional array
+	int [][] arr=new int[row][col];
+	
+//    This for for the entering the element of the array;
+	  for(int i=0; i<row; i++) {
+		  for (int j=0; j<col; j++) {
+			  System.out.println("Enter a element in position "+i+","+j);
+			  arr[i][j]= myObj.nextInt();
+			  
+		  }
+	  }
+	  for(int i=0; i<row; i++) {
+		  for(int j=0; j<col; j++) {
+			  System.out.print(arr[i][j]);
+		  }
+		  System.out.println();
+	  }
+}
+}

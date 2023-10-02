@@ -42,7 +42,7 @@ public static void main(String[] args) {
 	  userInput=myObj.nextInt();
 	 if(fund==0) {
 		 System.out.println("Deposite some money to play this game");
-		 System.out.println("Note:This game winning ratio is 99.9% you should try it by selling property ");                                                                                                                                                                  
+		 System.out.println("Note: If you don't have enough money don't play this game");                                                                                                                                                                  
 		 break;
 	 }
 	 

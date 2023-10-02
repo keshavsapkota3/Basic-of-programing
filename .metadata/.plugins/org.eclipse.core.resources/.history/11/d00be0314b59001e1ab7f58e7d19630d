@@ -1,0 +1,75 @@
+package houseofjava;
+import java.util.*;
+public class log1 {
+	
+		public static void main(String[] args) {
+
+		// Ask the user to type first name, last name and the domain of the company
+
+		Scanner in = new Scanner(System.in);
+
+		System.out.println("First name?");
+
+		String firstName = in.nextLine();
+
+		System.out.println("Last name?");
+
+		String lastName = in.nextLine();
+
+		System.out.println("Business domain name?");
+
+		String domainName = in.nextLine();
+
+		if (!firstName.equals("") && !lastName.equals(""))
+
+		{
+
+		GenerateEmail(firstName, lastName, domainName);
+
+		GenerateUsername(firstName, lastName);
+
+		}
+
+		else
+
+		{
+
+		System.out.println("Error! First and/or last name is missing.");
+
+		}
+
+		}
+
+		/*GenerateEmail method generates an email address based on the first name, last name and domain name.
+
+		* It converts all the characters to lowercase and finally prints the email.
+
+		* The email may include country specific characters like ä or ö.*/
+
+		public static void GenerateEmail(String s1, String s2, String s3) {
+
+		System.out.println(lowerName(s1) + "." + lowerName(s2) + "@" + s3 + ".fi");
+
+		}
+
+		public static void GenerateUsername(String s1, String s2){
+
+		String firstLetters = lowerName(s1).substring(0, 4);
+
+		String lastLetters = lowerName(s2).substring(s2.length() - 4, s2.length());
+
+		System.out.println(firstLetters + lastLetters);
+
+		}
+
+		public static String lowerName(String name) {
+
+		return name.toLowerCase();
+
+		}
+
+		}
+
+
+
+

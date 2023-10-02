@@ -1,0 +1,21 @@
+package houseofjava;
+import java.util.*;
+public class multidarray {
+public static void main(String[] args) {
+	Scanner myObj=new Scanner (System.in);
+	System.out.println("Enter the number of row?");
+	int row= myObj.nextInt();
+	System.out.println("Enter the number of column?");
+	int col=myObj.nextInt();
+	int [][]array=new int[3][3];
+	
+//	Enter the element of the array
+	
+	for (int i=0; i<3; i++) {
+		for(int j=0; j<3; j++){
+		array[i][j]=myObj.nextInt();
+			
+		}
+	}
+}
+}
