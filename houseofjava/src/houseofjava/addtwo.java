@@ -13,7 +13,6 @@ public class addtwo {
 		
 		System.out.println("Enter the second number ");
 		int num2=myObj.nextInt();
-	    
 		
 		int result=add(num1,num2);
 		

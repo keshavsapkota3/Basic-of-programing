@@ -1,4 +1,4 @@
-package newjavaproject;
+package houseofjava;
 import java.util.*;
 public class lucky7 {
 public static void main(String[] args) {
